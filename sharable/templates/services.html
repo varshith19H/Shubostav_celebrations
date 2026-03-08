@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhotsav - Soul of Celebrations</title>
+    <meta name="description"
+        content="Premium event organizing, photography, and decorations in Jupiter Colony, Hyderabad.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <div class="logo-text">
+                    <span class="logo-title">Shubhotsav</span>
+                    <span class="logo-subtitle">Soul of Celebrations</span>
+                </div>
+            </a>
+                                    <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}" class="btn-primary">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+                        <ul class="mobile-nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+            <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <div class="close-menu"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container reveal-up">
+            <h1>Our Premium Services</h1>
+            <p>Discover our extensive range of dedicated event organizing, photography, and decoration services.</p>
+        </div>
+    </header>
+
+<section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Our Premium Services</h2>
+                <p>Discover our extensive range of dedicated event organizing, photography, and decoration services
+                    explicitly customized for any and all types of gatherings.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal-up">
+                    <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Photography & Shoots</h3>
+                    <p>Professional and candid captures tailored precisely to your special moments or events.</p>
+                    <div class="tags">
+                        <span>Candid</span><span>Pre-Wedding</span><span>Save The
+                            Date</span><span>Maternity</span><span>Newborn</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal-up delay-1">
+                    <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+                    <h3>Videography & Cinema</h3>
+                    <p>High-quality videography delivering premium aesthetic video reels and full event coverage.</p>
+                    <div class="tags">
+                        <span>Traditional Video</span><span>Cinematography</span><span>Albums</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal-up delay-2">
+                    <div class="service-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Wedding Events</h3>
+                    <p>Expert organizing to handle every tradition smoothly with flair and soul.</p>
+                    <div class="tags">
+                        <span>Wedding
+                            Planning</span><span>Haldi</span><span>Mehandi</span><span>Sangeet</span><span>Engagement</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal-up">
+                    <div class="service-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                    <h3>Family Occasions</h3>
+                    <p>Bring joy to your family milestones with carefully well-organized fun celebrations.</p>
+                    <div class="tags">
+                        <span>Birthday</span><span>Baby Shower</span><span>Naming Ceremony</span><span>House
+                            Warming</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card reveal-up delay-1">
+                    <div class="service-icon"><i class="fa-brands fa-pagelines"></i></div>
+                    <h3>Event Decorations</h3>
+                    <p>Premium elegant floral and modern decorations creating awe-inspiring atmospheres.</p>
+                    <div class="tags">
+                        <span>Banquet Hall</span><span>Wedding Decor</span><span>Flower Decorators</span><span>Car
+                            Decors</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card reveal-up delay-2">
+                    <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                    <h3>Corporate & Institutional</h3>
+                    <p>Delivering exceptional discipline and grand arrangements for large scale formal events.</p>
+                    <div class="tags">
+                        <span>Corporate Events</span><span>Annual
+                            Day</span><span>Institutions</span><span>Seminars</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="faq" class="faq section-padding" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our services, booking process, and more.</p>
+            </div>
+            <div class="accordion-container reveal-up">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How far in advance should we book your services?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We recommend booking at least 3-6 months in advance for weddings and large events to ensure
+                            availability. For smaller parties and portrait shoots, 3-4 weeks is usually sufficient.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do you travel outside Hyderabad?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, absolutely! While we are based in Jupiter Colony, Hyderabad, our team loves traveling
+                            for destination weddings and corporate events across India and globally.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can you customize a package based on our budget?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We understand that every event is unique. We offer flexible packages that can be tailored to
+                            meet your specific requirements, vision, and budget without compromising on quality.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do you provide raw footage of photography and videography?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, we provide all raw footage and unedited photos upon request. However, our custom-edited
+                            albums and cinematic videos represent our true artistic vision and signature style.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Shubhotsav (Soul of Celebrations). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/9108792904254" class="whatsapp-float bg-pulse" target="_blank"
+        aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

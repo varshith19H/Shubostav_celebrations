@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhotsav - Soul of Celebrations</title>
+    <meta name="description"
+        content="Premium event organizing, photography, and decorations in Jupiter Colony, Hyderabad.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <div class="logo-text">
+                    <span class="logo-title">Shubhotsav</span>
+                    <span class="logo-subtitle">Soul of Celebrations</span>
+                </div>
+            </a>
+                                    <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}" class="btn-primary">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+                        <ul class="mobile-nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+            <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <div class="close-menu"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container reveal-up">
+            <h1>About Us</h1>
+            <p>Crafting Dreams Into Reality with 10+ Years of Experience</p>
+        </div>
+    </header>
+
+<section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content reveal-up">
+                    <span class="badge">Who We Are</span>
+                    <h2>Crafting Dreams Into <span class="highlight">Reality</span></h2>
+                    <p>At Shubhotsav, we believe that every celebration has a soul. From the vibrant hues of a Haldi
+                        ceremony to the grandeur of a corporate gala, we pour our heart into every detail to ensure your
+                        memories are nothing short of magical.</p>
+                    <br>
+                    <p>Based in Jupiter Colony, Hyderabad, our team of expert photographers, cinematographers, and event
+                        organizers work seamlessly to provide a stress-free experience, allowing you to simply live in
+                        the moment.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number">500+</h3>
+                            <p>Events</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">1000+</h3>
+                            <p>Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">10+</h3>
+                            <p>Years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal-up delay-2">
+                    <div class="img-container glass-panel">
+                        <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="About Shubhotsav">
+                        <div class="experience-badge">
+                            <span>10+</span>
+                            <small>Years Exp</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Words of Love</h2>
+                <p>Hear what our wonderful clients have to say about their experience with us.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card glass-panel reveal-up">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Shubhotsav made our wedding an absolute fairytale! The floral
+                        decorations were breathtaking, and the photography team captured every candid emotion so
+                        beautifully."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya R." class="client-img">
+                        <div>
+                            <h4>Priya & Rahul</h4>
+                            <span class="event-type">Wedding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-panel reveal-up delay-1">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"We hired them for our son's naming ceremony. From the moment they
+                        arrived, they were so professional and patient. The custom album we received is our most
+                        treasured possession."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Anil K." class="client-img">
+                        <div>
+                            <h4>Anil Kumar</h4>
+                            <span class="event-type">Naming Ceremony</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-panel reveal-up delay-2">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Organizing our annual corporate seminar was a breeze with Shubhotsav.
+                        Punctual, precise, and highly elegant arrangements that impressed all our stakeholders."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sneha V." class="client-img">
+                        <div>
+                            <h4>TechNova Solutions</h4>
+                            <span class="event-type">Corporate Seminar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Shubhotsav (Soul of Celebrations). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916305380754" class="whatsapp-float bg-pulse" target="_blank"
+        aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
