@@ -23,4 +23,4 @@ var/
 venv/
 ENV/
 .vscode/
-credentials.json
+
