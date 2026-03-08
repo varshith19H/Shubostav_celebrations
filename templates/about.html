@@ -30,7 +30,7 @@
                     <span class="logo-subtitle">Soul of Celebrations</span>
                 </div>
             </a>
-                                    <ul class="nav-links">
+            <ul class="nav-links">
                 <li><a href="{{ url_for('index') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
                 <li><a href="{{ url_for('services') }}">Services</a></li>
@@ -45,7 +45,7 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu">
-                        <ul class="mobile-nav-links">
+        <ul class="mobile-nav-links">
             <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
             <li><a href="{{ url_for('services') }}">Services</a></li>
@@ -55,7 +55,7 @@
         <div class="close-menu"><i class="fa-solid fa-xmark"></i></div>
     </div>
 
-    
+
     <!-- Page Header -->
     <header class="page-header">
         <div class="container reveal-up">
@@ -64,7 +64,7 @@
         </div>
     </header>
 
-<section id="about" class="about section-padding">
+    <section id="about" class="about section-padding">
         <div class="container">
             <div class="about-wrapper">
                 <div class="about-content reveal-up">
@@ -95,7 +95,7 @@
                 </div>
                 <div class="about-image reveal-up delay-2">
                     <div class="img-container glass-panel">
-                        <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        <img src="{{ url_for('static', filename='images/shubhotsav-soul-of-celebrations-jupiter-colony-hyderabad-photographers-kzaa0pkus1.jpg') }}"
                             alt="About Shubhotsav">
                         <div class="experience-badge">
                             <span>10+</span>
@@ -107,7 +107,7 @@
         </div>
     </section>
 
-<section id="testimonials" class="testimonials section-padding">
+    <section id="testimonials" class="testimonials section-padding">
         <div class="container">
             <div class="section-header reveal-up">
                 <h2>Words of Love</h2>
